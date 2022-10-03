@@ -73,9 +73,26 @@ section .mapa{
     width: 100%;
 }
 
-section .formulario{
-    height: 600px;
-    width: 100%;
+section form{
+    background-color: red;
+    justify-content: center;
+}
+
+input{
+    display: block;
+    height: 30px;
+    width: 300px;
+    background-color: #ccc;
+    padding: 0 20px;
+    margin: 20px 0;
+    outline: none;
+}
+
+select{
+    height: 30px;
+    width: 300px;
+    background-color: #ccc;
+    outline: none;
 }
 
 
