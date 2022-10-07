@@ -1,3 +1,6 @@
-nombre = prompt('cual es tu nombre')
+const nav = document.querySelector('.nav');
+const button = document.querySelector('.desplegar');
 
-alert('Bienvenido' + ' ' + nombre)
+button.addEventListener('click', ()=>{
+    nav.classList.toggle('active')
+})
