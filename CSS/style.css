@@ -12,12 +12,14 @@
 
 header{
     width: 100%;
-    background-color: rgb(161, 146, 146);
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     position: fixed;
+    color: white;
+
 }
 
 .header-1{
@@ -26,11 +28,12 @@ header{
 
 .desplegar{
     border: none;
-    background-color: rgb(161, 146, 146);
+    background-color: black;
     font-size: 20px;
     display: none;
     cursor: pointer;
     margin-right: 10px;
+    color: white;
 }
 
 h1{
@@ -63,6 +66,7 @@ ul a:hover{
 
 section{
     padding-top: 50px;
+    width: 100%;
 }
 
 section .imagenes{
@@ -79,20 +83,19 @@ section .menu{
 
 section .mapa{
     height: 300px;
-    width: 80%;
-    border: 1px solid black;
+    background-color: rgb(173, 168, 168);
     display: flex;
     justify-content: space-between;
     justify-items: center;
     padding: 30px;
 }
 
+
 .mapa iframe{
     width: 200px;
 }
 
 section .section-form{
-    
     background-color: rgb(219, 212, 212);
 }
 
@@ -146,25 +149,25 @@ footer{
     background-color: rgb(82, 24, 24);
     color: bisque;
     display: flex;
-    height: 150px;
+    width: 100%;
+    align-items: center; 
+    padding: 10px;
+    height: 100px;
+    
 }
 
 footer .info-footer{
-    width: 80%;
+    width: 50%;
 }
 
-footer p{
-    margin: 50px 30px;
+footer div{
+    width: 50%;
+    display: flex;
+    justify-content: end;
 }
 
 footer ul{
-    width: 50%;
-    text-align: right;
-    margin-right: 30px;
-}
-
-footer li{
-    margin: 10px 0;
+    margin-right: 20px;
 }
 
 
