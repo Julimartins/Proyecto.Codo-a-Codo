@@ -86,28 +86,21 @@ section .menu{
 
 section .mapa{
     height: 300px;
-    
-    
+    padding-top: 80px;
 }
 
-
-.mapa iframe{
-    width: 200px;
+section .info-mapa{
+    padding: 30px;
 }
 
-section .section-form{
+section .imagen-mapa{
+    border: 1px solid black;
+}
+
+section .section-consultas{
     background-color: rgb(219, 212, 212);
     display: flex;
-}
-
-section .tittle-form{
-    text-align: center;
-    font-size: 40px;
-}
-
-section .container-form{
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 section .tittle-form{
@@ -142,6 +135,14 @@ select{
     outline: none;
 }
 
+textarea{
+    background-color: #ccc; 
+    padding: 10px 20px; 
+    resize: none; 
+    outline: none;
+    border: 1px rgb(158, 152, 152) solid;
+    
+}
 
 
 /* FOOTER */

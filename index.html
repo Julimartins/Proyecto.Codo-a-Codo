@@ -93,17 +93,23 @@
     </div>
     
           
-    <div class="section-form">
+    <div class="section-consultas">
 
-      <h3 class="tittle-form">Consultas y reservas</h3>
+      <div class="mapa">
+        <div class="info-mapa">
+          <h3 style="font-size: 40px;">Ubicacion</h3><br>
+          <p>Calle xxxxxx Barrio XXXX</p>
+        </div>
+        <img class="imagen-mapa" src="https://media-cdn.tripadvisor.com/media/photo-s/09/63/21/72/bella-china.jpg" alt="">
+      </div>
 
       <div class="container-form">
-        <form action="">
+        <form>
           <fieldset>
-            <legend>Contacto</legend>
-            <select name="" id="">
-              <option value="">Realizar reserva</option>
-              <option value="">Consulta general</option>
+            <legend style="font-size: 30px;">Consultas y reservas</legend>
+            <select>
+              <option value="1">Realizar reserva</option>
+              <option value="2">Consulta general</option>
             </select>
             <div class="input">
             <input type="text" name="nombre" placeholder="Nombre..." required>
@@ -113,18 +119,12 @@
             <input type="email" name="email" placeholder="Email..." required>
             <input type="text" name="fecha" placeholder="Fecha..." required>
             <input type="number" name="cantidad" placeholder="Comensales..." required>
-            <textarea placeholder="Mensaje..." cols="90" rows="10" style="background-color: #ccc; outline: none;"></textarea>
-            <input type="submit" placeholder="Enviar" style="width: 100px; margin-left:540px;" onclick="Enviar">
+            <textarea placeholder="Mensaje..." cols="85" rows="10" maxlength="400"></textarea>
+            <input class="envio-form" type="submit" placeholder="Enviar" style="width: 100px; margin-left:540px;" onclick="Enviar">
           </fieldset>
         </form>
       </div>
-      <div class="mapa">
-        <div class="info-mapa">
-          <h3>Ubicacion</h3><br>
-          <p>Calle xxxxxx Barrio XXXX</p>
-        </div>
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/63/21/72/bella-china.jpg" alt="">
-      </div>
+      
     </div>
     
   </section>
