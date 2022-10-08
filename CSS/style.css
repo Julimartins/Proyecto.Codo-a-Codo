@@ -6,7 +6,15 @@
     list-style: none;
 }
 
+body{
+    background-color: green;
+}
 
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 2px;
+}
 
 /* HEADER */
 
@@ -78,27 +86,70 @@ section .imagenes{
 }
 
 section .menu{
-    height: 600px;
     width: 100%;
 }
 
+.titulo-menu{
+    background-color: rgb(13, 24, 19);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.container-menu{
+    background-color: rgb(37, 90, 68);
+    color: white;
+    padding: 100px 0;
+}
+
+.row{
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row p{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.column-p{
+    background-color: rgb(34, 27, 27);
+    padding: 0 30px 30px 30px;
+    cursor: pointer;
+}
+
+.column-p:hover{
+    scale: 1.2;
+}
+
 section .section-consultas{
-    background-color: rgb(219, 212, 212);
+    background-color: rgb(82, 99, 75);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 80px 0;
+    color: white;
 }
 
 section .mapa{
     height: 300px;
+    padding-top: 50px;
 }
 
 section .info-mapa{
     padding: 30px;
+    background-color: rgb(47, 65, 47);
 }
 
 section .imagen-mapa{
-    border: 2px solid rgb(95, 78, 78);
+    height: 400px;
+    width: 400px;
 }
 
 section .tittle-form{
@@ -112,7 +163,7 @@ section form{
 
 fieldset{
     padding: 10px;
-    border: 3px solid rgb(137, 126, 126) ;
+    border: 3px solid rgb(16, 27, 15) ;
 }
 
 input{
@@ -131,6 +182,7 @@ select{
     width: 300px;
     background-color: #ccc;
     outline: none;
+    padding: 0 15px;
 }
 
 textarea{
