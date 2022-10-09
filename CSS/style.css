@@ -9,12 +9,15 @@
 
 html{
     scroll-behavior: smooth;
+    width: 100%!important;
+    overflow-x: hidden!important;
 }
 
 body{
-    background-color: green;
-    width: 100%;
+    width: 100%!important;
+    overflow-x: hidden!important;
 }
+
 
 img{
     width: 250px;
@@ -86,10 +89,11 @@ section{
 }
 
 section .imagenes{
-    padding: 400px 0 200px 0;
+    padding: 200px 100px;
     background-color: rgb(34, 33, 33);
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 section .imagenes img{
@@ -116,7 +120,7 @@ section .menu{
 }
 
 .container-menu{
-    background-color: rgb(37, 90, 68);
+    background-color: rgb(32, 32, 32);
     color: white;
     padding: 100px 0;
 }
@@ -128,25 +132,32 @@ section .menu{
     justify-content: space-around;
 }
 
-.row p{
+.row .categoria{
     font-size: 20px;
     text-align: center;
     color: white;
     font-weight: 700;
-    padding: 20px 0;
-    
+    padding: 20px 0px;
 }
 
 .column-p{
     background-color: rgb(34, 27, 27);
     padding: 0 30px 30px 30px;
     cursor: pointer;
-    transition: all 1s ease;
+}
+
+.column-p img{
+    height: 400px;
+    width: 400px;
+}
+
+.comidas{
+    font-size: 20px;
+    text-align: center;
 }
 
 .column-p:hover{
-    scale: 1.2;
-    transition: all 1s ease;
+    background-color: rgb(21, 22, 22);
 }
 
 section .section-consultas{
