@@ -8,29 +8,33 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://kit.fontawesome.com/ac3c7794f3.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="inicio">
 
   <header>
-    <div class="header-1">
+    <div class="header-1" >
       <h1>Restaurante "JAUJA"</h1>
       <button class="desplegar"><i class="fas fa-bars"></i></button>
     </div>
     </div>
     <nav class="nav">
       <ul>
-        <li><a href="#">Inicio</a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#contacto">Contacto y reservas</a></li>
         <li><a href="nosotros.html">Nuestra Historia</a></li>
-        <li><a href="#">Consultas y reservas</a></li>
-        <li><a href="#">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
+
   <section>
-    <div class="imagenes">
-      
+    <div class="imagenes" >
+      <img src="https://www.restaurantejauja.com.ar/images/resto3.jpg" alt="">
+      <img src="https://www.restaurantejauja.com.ar/images/resto4.jpg" alt="">
+      <img src="https://www.restaurantejauja.com.ar/images/resto1.jpg" alt="">
+      <img src="https://www.restaurantejauja.com.ar/images/resto2.jpg" alt="">
     </div>
-    <div class="menu">
+    <div class="menu" id="menu">
       <h2 class="titulo-menu">Menú</h2>
 
       <div class="container-menu">
@@ -104,8 +108,8 @@
       </p> -->
     </div>
     
-    <div>
-      <h2 style="text-align: center; background: rgb(13, 24, 19); font-size: 50px; color:white; padding: 40px 0;">Contacto</h2>
+    <div id="contacto">
+      <h2 style="text-align: center; background: rgb(13, 24, 19); font-size: 50px; color:white; padding: 40px 0;">Contacto y reservas</h2>
     </div>
 
     <div class="section-consultas">
@@ -150,8 +154,20 @@
     <div class="info-footer">
       <p>© 2022 Nombre del Restaurante | Todos los derechos reservados | Sitio realizado por Codo a Codo</p>
     </div>
-    <div>
-      <ul>
+
+    <div class="nav-footer">
+      <nav class="nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#contacto">Contacto y reservas</a></li>
+          <li><a href="nosotros.html">Nuestra Historia</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="redes">
+      <ul class="lista-redes">
         <li><a href="#"><img src="./ICONOS/instagram.png" style="width: 20px;height: 20px;" alt=""> Instagram</a></li>
         <li><a href="#"><img src="./ICONOS/facebook.png" style="width: 20px;height: 20px;" alt=""> Facebook</a></li>
         <li><a href="#"><img src="./ICONOS/twitter.png" style="width: 20px;height: 20px;" alt=""> Twitter</a></li>

@@ -1,13 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: green;
+    width: 100%;
 }
 
 img{
@@ -23,15 +29,14 @@ header{
     background-image: url(https://www.restaurantejauja.com.ar/images/slider2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     color: white;
     font-size: 30px;
-
 }
+
 
 .header-1{
     display: flex;
@@ -67,8 +72,9 @@ header a{
     font-size: 35px;
 }
 
-header a:hover{
-    border-bottom: 4px solid white;
+header li:hover{
+    transition: all 1s ease;
+    scale: 1.3;
 }
 
 
@@ -76,13 +82,25 @@ header a:hover{
 /* SECTION */
 
 section{
-    padding-top: 50px;
     width: 100%;
 }
 
 section .imagenes{
+    padding: 400px 0 200px 0;
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    justify-content: space-around;
+}
+
+section .imagenes img{
     height: 300px;
-    width: 50%;
+    width: 300px;
+    transition: all 1s ease;
+}
+
+section .imagenes img:hover{
+    scale: 1.3;
+    transition: all 1s ease;
 }
 
 section .menu{
@@ -116,16 +134,19 @@ section .menu{
     color: white;
     font-weight: 700;
     padding: 20px 0;
+    
 }
 
 .column-p{
     background-color: rgb(34, 27, 27);
     padding: 0 30px 30px 30px;
     cursor: pointer;
+    transition: all 1s ease;
 }
 
 .column-p:hover{
     scale: 1.2;
+    transition: all 1s ease;
 }
 
 section .section-consultas{
@@ -203,9 +224,7 @@ footer{
     display: flex;
     width: 100%;
     align-items: center; 
-    padding: 10px;
-    height: 100px;
-    
+    padding: 60px;
 }
 
 footer .info-footer{
@@ -213,22 +232,40 @@ footer .info-footer{
     padding-left: 100px;
 }
 
-footer div{
+.nav-footer ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-footer ul li{
+    padding: 10px 0;
+    width: 200px;
+    text-align: center;
+}
+
+footer .redes{
     width: 50%;
     display: flex;
     justify-content: center;
 }
 
-footer ul{
+footer .lista-redes{
     margin-right: 20px;
 }
 
+footer .lista-redes li{
+    padding: 10px 0;
+}
+
 footer a{
-    color: white;
+    color: bisque;
 }
 
 
+
+
 @media screen and (max-width: 1024px) {
+
     header{
         display: block;
         padding-top: 80px;
@@ -277,7 +314,6 @@ footer a{
 
     .mapa{
         margin-bottom: 230px;
-        width: 100%;
         padding-left: 240px;
         margin-bottom: 300px;
     }
