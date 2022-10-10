@@ -220,10 +220,20 @@ select{
 textarea{
     background-color: #ccc; 
     padding: 10px 20px; 
+    width: 600px;
+    height: 200px;
     resize: none; 
     outline: none;
     border: 1px rgb(158, 152, 152) solid;
-    
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: rgb(202, 39, 88);
+    padding-top: 20px;
+    font-size: 20px;
 }
 
 /* Boton arriba */
@@ -341,11 +351,11 @@ footer a{
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        padding-top: 30px;
     }
     
     header li{
-        margin: 15px 0;
+        margin: 15px 0 ;
     }
 
     .mapa{
@@ -358,6 +368,14 @@ footer a{
         background-color: rgb(155, 147, 147);
         width: 100%;
         padding-left: 150px;
+    }
+
+    .row{
+        padding-bottom: 0px;
+    }
+
+    .column-p:hover{
+        background: rgb(34, 27, 27);
     }
 }
 

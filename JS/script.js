@@ -1,6 +1,25 @@
 const nav = document.querySelector('.nav');
 const button = document.querySelector('.desplegar');
-const envio_form = document.querySelector('.envio-form');
+const envio_form = document.getElementById('envio_form');
+const nombre = document.getElementById('nombre');
+const apellido = document.getElementById('apellido');
+const email = document.getElementById('email');
+const telefono = document.getElementById('telefono');
+const comensales = document.getElementById('comensales');
+const fecha = document.getElementById('fecha');
+const parrafo = document.getElementById('warnings');
+
+envio_form.addEventListener('click', e=>{
+    e.preventDefault()
+    if(nombre.value.length >= 3 && apellido.value.length >=3 
+        && email.value.length >=12 && telefono.value.length >=6 
+        && comensales.value.length > 0 && fecha.value.length > 0){
+        parrafo.textContent = 'Enviado correctamente';
+    }
+    else{
+        parrafo.textContent = '¡Hay campos vacios o incorrectos!'
+    }
+})
 
 document.getElementById("boton-up").addEventListener("click", inicio);
 
@@ -27,8 +46,4 @@ button.addEventListener('click', ()=>{
     button.classList.toggle('oscurece');
 })
 
-window.addEventListener('scroll', function(){
-    var header = document.querySelector('header');
-    header.classList.toggle('header-fijo', window.scrollY)
-})
 
