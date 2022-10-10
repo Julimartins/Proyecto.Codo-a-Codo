@@ -220,10 +220,20 @@ select{
 textarea{
     background-color: #ccc; 
     padding: 10px 20px; 
+    width: 600px;
+    height: 200px;
     resize: none; 
     outline: none;
     border: 1px rgb(158, 152, 152) solid;
-    
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: rgb(202, 39, 88);
+    padding-top: 20px;
+    font-size: 20px;
 }
 
 /* Boton arriba */
