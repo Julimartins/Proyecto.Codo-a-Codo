@@ -27,8 +27,4 @@ button.addEventListener('click', ()=>{
     button.classList.toggle('oscurece');
 })
 
-window.addEventListener('scroll', function(){
-    var header = document.querySelector('header');
-    header.classList.toggle('header-fijo', window.scrollY)
-})
 
