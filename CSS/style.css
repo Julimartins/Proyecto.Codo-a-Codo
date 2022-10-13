@@ -18,25 +18,23 @@ body{
     overflow-x: hidden!important;
 }
 
-
 img{
     width: 250px;
     height: 250px;
     border-radius: 2px;
 }
 
-/* HEADER */
+/* -----HEADER----- */
 
 
 header .encabezado{
     width: 100%;
-    height: 200px;
     background-color: rgb(31, 30, 30);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 30px;
-    padding: 60px 0;
+    padding: 10px 0;
     position: fixed;
     z-index: 1;
     transition: all 1s ease;
@@ -89,19 +87,23 @@ header .restaurante{
     background-image: url(https://www.restaurantejauja.com.ar/images/slider2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px ;
+    height: 1000px;
     width: 100%;
 }
 
 header .abajo{
-    opacity: 0.6;
-    height: 0;
+    opacity: 0.3;
     transition: all 2s ease;
+}
+
+header .abajo:hover{
+    opacity: 1;
+    transition: all 1s ease;
 }
 
 
 
-/* SECTION */
+/*---- SECTION -----*/
 
 
 /* SECCION HISTORIA */
@@ -109,6 +111,8 @@ header .abajo{
 section{
     width: 100%;
 }
+
+
 
 section .titulo-seccion{
     background-color: grey;
@@ -125,8 +129,10 @@ section .historia{
 }
 
 section .texto{
-    border: 2px solid black;
+    border: 20px solid rgb(71, 46, 46);
+    border-radius: 5px;
     padding: 40px;
+    background-color: antiquewhite;
 }
 
 section .historia h1{
@@ -246,7 +252,7 @@ section form{
 }
 
 fieldset{
-    padding: 10px;
+    padding: 20px;
     border: 3px solid rgb(16, 27, 15) ;
 }
 
@@ -291,9 +297,9 @@ textarea{
 /* Boton arriba */
 
 #boton-up{
-width: 60px;
-height: 60px;
-background: rgb(74, 100, 229);
+width: 40px;
+height: 40px;
+background: rgb(27, 36, 83);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -324,11 +330,6 @@ footer{
     align-items: center; 
     padding: 60px;
     justify-content: space-around;
-}
-
-
-.nav-footer{
-    
 }
 
 .nav-footer ul{
@@ -380,13 +381,25 @@ footer .lista-redes li:hover{
 
 @media screen and (max-width: 1024px) {
 
-    header{
+    header .encabezado{
         display: block;
         font-size: 20px;
+        width: 100%;
+        transition: none;
+        position: inherit;
     }
 
+    header .abajo{
+        opacity: 1;
+        transition: none;
+    }
+    
     .header-1{
         justify-content: space-between;
+    }
+
+    header .restaurante{
+        height: 400px;
     }
 
     .desplegar{
@@ -402,10 +415,12 @@ footer .lista-redes li:hover{
         overflow: hidden;
         transition: all 2s ease;
         margin-top: 15px;
+        position: absolute;
+        background-color: rgb(31, 30, 30);
     }
 
     .active{
-        height: 40vh;
+        height: 50vh;
         transition: all 3s ease;
     }
 
@@ -423,6 +438,9 @@ footer .lista-redes li:hover{
     
     header li{
         margin: 15px 0 ;
+        padding-left: 10px;
+        border-left: 10px solid white;
+        border-right: 10px solid white;
     }
 
     section .texto{
@@ -443,10 +461,6 @@ footer .lista-redes li:hover{
 
     .row{
         padding-bottom: 0px;
-    }
-
-    .column-p:hover{
-        background: rgb(34, 27, 27);
     }
 }
 
