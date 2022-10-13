@@ -12,26 +12,29 @@
 <body id="inicio">
 
   <header>
-    <div class="header-1" >
-      <h1>Restaurante "JAUJA"</h1>
-      <button class="desplegar"><i class="fas fa-bars"></i></button>
+    <div class="encabezado">
+      <div class="header-1" >
+        <h1>Restaurante "JAUJA"</h1>
+        <button class="desplegar"><i class="fas fa-bars"></i></button>
+      </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#historia">Nuestra Historia</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#contacto">Contacto y reservas</a></li>
+          </ul>
+        </nav>
+      </div>
+    <div class="restaurante">
+
     </div>
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#historia">Nuestra Historia</a></li>
-        <li><a href="#menu">Menú</a></li>
-        <li><a href="#contacto">Contacto y reservas</a></li>
-      </ul>
-    </nav>
   </header>
 
 
   <section>
-    <div class="titulo-historia">
-    <h1>Nuestra historia</h1>
-    </div>
+
     <div class="historia" id="historia">   
       <div class="texto">
         <h1>La historia de (Nombre del Restaurante)</h1>
@@ -48,21 +51,51 @@
         <h2>Sean bienvenidos, siempre.</h2>
       </div>
     </div>
-    <div class="titulo-imagenes">
+
+
+    <div class="titulo-seccion">
       <h1>
         Nuestro restaurante
       </h1>
     </div>
     <div class="imagenes" >
-      <img src="https://www.restaurantejauja.com.ar/images/resto3.jpg" alt="">
-      <img src="https://www.restaurantejauja.com.ar/images/resto4.jpg" alt="">
-      <img src="https://www.restaurantejauja.com.ar/images/resto1.jpg" alt="">
-      <img src="https://www.restaurantejauja.com.ar/images/resto2.jpg" alt="">
+      <fieldset>
+        <legend>hola</legend>
+      <div class="row-img-1">
+        <img src="https://www.restaurantejauja.com.ar/images/resto3.jpg" alt="">
+        <img src="https://www.restaurantejauja.com.ar/images/resto4.jpg" alt="">
+        <img src="https://www.restaurantejauja.com.ar/images/resto1.jpg" alt="">
+        <img src="https://www.restaurantejauja.com.ar/images/resto2.jpg" alt="">
+      </div>
+      <div class="row-img-1">
+        <img src="https://www.restaurantejauja.com.ar/images/resto3.jpg" alt="">
+        <img src="https://www.restaurantejauja.com.ar/images/resto4.jpg" alt="">
+        <img src="https://www.restaurantejauja.com.ar/images/resto1.jpg" alt="">
+        <img src="https://www.restaurantejauja.com.ar/images/resto2.jpg" alt="">
+      </div>
+      <div class="row-img-1">
+        <img src="https://www.restaurantejauja.com.ar/images/resto3.jpg" alt="">
+        <img src="https://www.restaurantejauja.com.ar/images/resto4.jpg" alt="">
+        <img src="https://www.restaurantejauja.com.ar/images/resto1.jpg" alt="">
+        <img src="https://www.restaurantejauja.com.ar/images/resto2.jpg" alt="">
+      </div>
+      <div class="row-img-1">
+        <img src="https://www.restaurantejauja.com.ar/images/resto3.jpg" alt="">
+        <img src="https://www.restaurantejauja.com.ar/images/resto4.jpg" alt="">
+        <img src="https://www.restaurantejauja.com.ar/images/resto1.jpg" alt="">
+        <img src="https://www.restaurantejauja.com.ar/images/resto2.jpg" alt="">
+      </div>
+    </fieldset>
     </div>
 
 
-    <div class="menu" id="menu">
-        <h2 class="titulo-menu">Menú</h2>
+
+    <div class="titulo-seccion" id="menu">
+      <h1>
+        Menú
+      </h1>
+    </div>
+    <div class="menu">
       <div class="container-menu">
         <div class="row">
           <div class="column-p">
@@ -164,21 +197,37 @@
       </div>
     </div>
     
-    <div id="contacto">
-      <h2 style="text-align: center; background: gray; font-size: 50px; color:white; padding: 40px 0;">Contacto y reservas</h2>
+
+    <div class="titulo-seccion" id="ubicacion">
+      <h1>
+        Ubicacion
+      </h1>
     </div>
 
-    <div class="section-consultas">
-
-      <div class="mapa">
-        <div class="info-mapa">
-          <h3 style="font-size: 40px;">Ubicacion</h3><br>
-          <p>Calle xxxxxx Barrio XXXX</p>
-        </div>
-        <div>
-          <img class="imagen-mapa" src="https://media-cdn.tripadvisor.com/media/photo-s/09/63/21/72/bella-china.jpg" alt="mapa">
-        </div>
+    <div class="mapa">
+      <div class="info-mapa">
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> La Vieja Esquina, Belgrano 193, Córdoba</li>
+          <li><i class="fas fa-motorcycle"></i> Delivery: (0294)442-9986</li>
+          <li><i class="fas fa-envelope"></i> info@restaurantejauja.com.ar</li>
+          <li><i class="fas fa-clock"></i> Todos los días 11:30 - 15:00hs / 19:30 - 00:00hs</li>
+        </ul>
+        
       </div>
+      <div class="img-mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4049.1356347604437!2d-64.18893599729503!3d-31.416780858628314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e1!4m0!4m5!1s0x9432986f9eb90f67%3A0xf17c6d17d4133419!2sLa%20Vieja%20Esquina%2C%20Belgrano%20193%2C%20X5000JQC%20C%C3%B3rdoba!3m2!1d-31.416961099999998!2d-64.18898589999999!5e0!3m2!1ses-419!2sar!4v1665626067737!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+
+
+
+    <div class="titulo-seccion" id="contacto">
+      <h1>
+        Contacto y consultas
+      </h1>
+    </div>
+    <div class="section-consultas">
 
       <div class="container-form">
         <form>
@@ -219,19 +268,20 @@
       <nav class="nav">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#menu">Menú</a></li>
-          <li><a href="#contacto">Contacto y reservas</a></li>
           <li><a href="nosotros.html">Nuestra Historia</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#contacto">Contacto y reservas</a></li>
         </ul>
       </nav>
     </div>
 
     <div class="redes">
       <ul class="lista-redes">
-        <li><a href="#"><img src="./ICONOS/instagram.png" style="width: 20px;height: 20px;" alt=""> Instagram</a></li>
-        <li><a href="#"><img src="./ICONOS/facebook.png" style="width: 20px;height: 20px;" alt=""> Facebook</a></li>
-        <li><a href="#"><img src="./ICONOS/twitter.png" style="width: 20px;height: 20px;" alt=""> Twitter</a></li>
-        <li><a href="#"><img src="./ICONOS/whatsapp.png" style="width: 20px;height: 20px;" alt=""> whatsapp</a></li>
+        <li><a href="#"><img src="./ICONOS/instagram.png" style="width: 20px;height: 20px;" alt="instagram"></a></li>
+        <li><a href="#"><img src="./ICONOS/facebook.png" style="width: 20px;height: 20px;" alt="facebook"></a></li>
+        <li><a href="#"><img src="./ICONOS/twitter.png" style="width: 20px;height: 20px;" alt="twitter"></a></li>
+        <li><a href="#"><img src="./ICONOS/whatsapp.png" style="width: 20px;height: 20px;" alt="whatsapp"></a></li>
       </ul>
     </div>
   </footer>

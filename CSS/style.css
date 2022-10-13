@@ -27,22 +27,24 @@ img{
 
 /* HEADER */
 
-header{
+
+header .encabezado{
     width: 100%;
-    background-image: url(https://www.restaurantejauja.com.ar/images/slider2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
+    height: 200px;
+    background-color: rgb(31, 30, 30);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
     font-size: 30px;
+    padding: 60px 0;
+    position: fixed;
+    z-index: 1;
+    transition: all 1s ease;
 }
-
 
 .header-1{
     display: flex;
+    color: white;
 }
 
 .desplegar{
@@ -69,18 +71,33 @@ nav ul{
     justify-content: space-around;
 }
 
+header li{
+    padding-right: 10px;
+    border-right: 1px solid white;
+}
 
 header a{
     color: white;
     font-size: 35px;
 }
 
-header li:hover{
-    transition: all 1s ease;
-    scale: 1.3;
+header li a:hover{
+    color: red;
 }
 
+header .restaurante{
+    background-image: url(https://www.restaurantejauja.com.ar/images/slider2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px ;
+    width: 100%;
+}
 
+header .abajo{
+    opacity: 0.6;
+    height: 0;
+    transition: all 2s ease;
+}
 
 
 
@@ -93,10 +110,10 @@ section{
     width: 100%;
 }
 
-section .titulo-historia{
+section .titulo-seccion{
     background-color: grey;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     padding: 40px 0;
 }
@@ -126,15 +143,6 @@ section h2{
 
 /* SECCION IMAGENES */
 
-.titulo-imagenes{
-    background-color: grey;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    padding: 40px 0;
-}
-
-
 section .imagenes{
     padding: 200px 100px;
     display: flex;
@@ -159,18 +167,7 @@ section .imagenes img:hover{
 
 section .menu{
     width: 100%;
-}
-
-section .titulo-menu{
-    background-color: grey;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    padding: 40px 0;
-}
-
-.container-menu{
-    padding: 100px 0;
+    padding: 200px 0;
 }
 
 .row{
@@ -209,6 +206,26 @@ section .titulo-menu{
 }
 
 
+/* SECCION MAPA */
+
+section .mapa{
+    display: flex;
+    justify-content: center;
+    padding: 200px 0;
+}
+
+section .info-mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 5px solid black;
+    background-color: antiquewhite;
+}
+
+section .info-mapa li{
+    padding: 20px 20px;
+}
+
 
 /* SECCION FORMULARIO */
 
@@ -216,22 +233,7 @@ section .section-consultas{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 80px 0;
-}
-
-section .mapa{
-    height: 300px;
-    padding-top: 50px;
-}
-
-section .info-mapa{
-    padding: 30px;
-    border: 1px solid black;
-}
-
-section .imagen-mapa{
-    height: 400px;
-    width: 400px;
+    padding: 200px 0;
 }
 
 section .tittle-form{
@@ -325,15 +327,30 @@ footer{
 }
 
 
+.nav-footer{
+    
+}
+
 .nav-footer ul{
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
+    text-align: center;
+    width: 200px;
 }
 
 .nav-footer ul li{
     padding: 10px 0;
-    width: 200px;
-    text-align: center;
+    transition: all 1s ease;
+}
+
+.nav-footer ul a{
+    color: white;
+}
+
+.nav-footer ul li:hover{
+    transition: all 1s ease;
+    scale: 1.3;
 }
 
 footer .redes{
@@ -346,13 +363,18 @@ footer .lista-redes{
 }
 
 footer .lista-redes li{
-    padding: 20px 0px;
+    padding: 10px 0px;
+    transition: all 1s ease;
 }
 
 footer a{
     color: bisque;
 }
 
+footer .lista-redes li:hover{
+    transition: all 0.5s ease;
+    scale: 1.9;
+}
 
 
 
@@ -360,7 +382,6 @@ footer a{
 
     header{
         display: block;
-        padding-top: 80px;
         font-size: 20px;
     }
 

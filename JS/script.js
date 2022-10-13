@@ -46,4 +46,8 @@ button.addEventListener('click', ()=>{
     button.classList.toggle('oscurece');
 })
 
+window.addEventListener('scroll', function(){
+    var nav_fijado = document.querySelector('.encabezado');
+    nav_fijado.classList.toggle('abajo', window.scrollY>100);
+})
 
