@@ -24,6 +24,7 @@ img{
     border-radius: 2px;
 }
 
+
 /* -----HEADER----- */
 
 
@@ -112,10 +113,16 @@ section{
     width: 100%;
 }
 
-
+section div h1{
+    background-color: black;
+    display: inline-block;
+    border-top: 10px solid gray;
+    border-radius: 10px;
+    padding: 0 100px;
+    width: 1500px;
+}
 
 section .titulo-seccion{
-    background-color: grey;
     color: white;
     font-size: 30px;
     text-align: center;

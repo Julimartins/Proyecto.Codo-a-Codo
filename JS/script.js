@@ -51,3 +51,35 @@ window.addEventListener('scroll', function(){
     nav_fijado.classList.toggle('abajo', window.scrollY>100);
 })
 
+
+window.sr = ScrollReveal();
+
+    sr.reveal('.navbar', {
+        duration: 3000,
+        origin: 'bottom',
+        distance: '-100px'
+    });
+
+    sr.reveal('.navbar1', {
+        duration: 3000,
+        origin: 'left',
+        distance: '-1000px'
+    });
+
+    sr.reveal('.navbar2', {
+        duration: 3000,
+        origin: 'right',
+        distance: '-1000px'
+    });
+
+    sr.reveal('.row1', {
+        duration: 3000,
+        origin: 'right',
+        distance: '-1000px'
+    });
+
+    sr.reveal('.row2', {
+        duration: 3000,
+        origin: 'left',
+        distance: '-1000px'
+    });
