@@ -49,7 +49,7 @@ header .encabezado{
 .desplegar{
     border: none;
     background-color: black;
-    font-size: 30px;
+    font-size: 20px;
     display: none;
     cursor: pointer;
     margin-right: 10px;
@@ -62,7 +62,7 @@ h1{
 
 nav{
     width: 50%;
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 nav ul{
@@ -77,15 +77,15 @@ header li{
 
 header a{
     color: white;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 header li a:hover{
-    color: red;
+    color: yellow;
 }
 
 header .restaurante{
-    background-image: url(https://www.restaurantejauja.com.ar/images/slider2.jpg);
+    background-image: url(../IMG/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
@@ -93,7 +93,7 @@ header .restaurante{
 }
 
 header .abajo{
-    opacity: 0.3;
+    opacity: 0.8;
     transition: all 2s ease;
 }
 
@@ -116,34 +116,36 @@ section{
 section div h1{
     background-color: black;
     display: inline-block;
-    border-top: 10px solid gray;
+    border-top: 10px solid rgb(203, 147, 57);
     border-radius: 10px;
     padding: 0 100px;
-    width: 1500px;
+    width: 95%;
 }
 
 section .titulo-seccion{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
+    justify-content: center;
     text-align: center;
-    padding: 40px 0;
+    width: 100%;
+    padding: 10px 0;
 }
 
 section .historia{
-    padding: 200px 200px;
-    font-size: 20px;
+    padding: 100px 100px;
+    font-size: 17px;
     text-align: justify;
 }
 
 section .texto{
-    border: 20px solid rgb(71, 46, 46);
+    border: 6px solid rgb(109, 82, 82);
     border-radius: 5px;
-    padding: 40px;
+    padding: 30px;
     background-color: antiquewhite;
 }
 
 section .historia h1{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-decoration: underline;
 }
 
@@ -306,7 +308,7 @@ textarea{
 #boton-up{
 width: 40px;
 height: 40px;
-background: rgb(27, 36, 83);
+background: rgb(198, 120, 31);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -324,7 +326,7 @@ transform: scale(0);
 
 #boton-up:hover{
     transform: scale(1.1);
-    border-color: rgba(0,0,0,0.1);
+    border-color: rgba(197, 160, 29, 0.1);
 }
 
 /* FOOTER */
@@ -334,9 +336,10 @@ footer{
     color: bisque;
     display: flex;
     width: 100%;
+    height: 40px;
     align-items: center; 
     padding: 60px;
-    justify-content: space-around;
+    justify-content:space-evenly;
 }
 
 .nav-footer ul{
@@ -348,7 +351,7 @@ footer{
 }
 
 .nav-footer ul li{
-    padding: 10px 0;
+    padding: 2px 0;
     transition: all 1s ease;
 }
 
@@ -363,7 +366,7 @@ footer{
 
 footer .redes{
     display: flex;
-    justify-content: center;
+    justify-content: center;  
 }
 
 footer .lista-redes{
@@ -373,6 +376,7 @@ footer .lista-redes{
 footer .lista-redes li{
     padding: 10px 0px;
     transition: all 1s ease;
+    padding: 2px 0;
 }
 
 footer a{
