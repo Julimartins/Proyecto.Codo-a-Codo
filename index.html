@@ -14,11 +14,11 @@
 
   <header>
     <div class="encabezado">
-      <div class="header-1 navbar" >
+      <div class="header-1" >
         <img style="width: 350px; height:100px;" src="IMG/logo1.png" alt="logo">
         <button class="desplegar"><i class="fas fa-bars"></i></button>
       </div>
-        <nav class="nav navbar">
+        <nav class="nav">
           <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#historia">Nuestra Historia</a></li>
@@ -35,19 +35,19 @@
   <section>
 
 
-    <div class="titulo-seccion" style="background-color: black;">
+    <div class="titulo-seccion"  id="historia" style="background-color: black;">
       <h1 style="border: none; font-size: 50px">
         Bienvenidos a nuestra Casa
       </h1>
     </div>
     
 
-    <div class="historia navbar" id="historia">   
+    <div class="historia navbar">   
       <div class="texto">
         <h1 style="background: none; border: none; padding: 0;">
           La historia de Restaurante "Casa de Campo"
         </h1>
-        <p>"¿Alguna vez viajaste en el tiempo? Seguramente, sí. Cada vez que te encontraste con una fotografía de tus abuelos, cada vez que soplaste el polvo de un libro perdido en un altillo, cada vez que usaste una vieja máquina de coser, cada vez que viste una película de inmigrantes vendimiadores, o la última vez que probaste una lasagna casera…
+        <p style="font-family: 'Playball', cursive;">"¿Alguna vez viajaste en el tiempo? Seguramente, sí. Cada vez que te encontraste con una fotografía de tus abuelos, cada vez que soplaste el polvo de un libro perdido en un altillo, cada vez que usaste una vieja máquina de coser, cada vez que viste una película de inmigrantes vendimiadores, o la última vez que probaste una lasagna casera…
           Eso es lo que suele suceder en Casa de Campo. Y es que, para empezar, la casona está en un lugar que es, sin ir más lejos, historia viva: la mítica calle Belgrano, de las Sierras de Córdoba.
           Conserva, también, la impronta de productores de la zona, donde, además de los afamados vinos, se elaboran quesos, dulces, conservas, aceites…       
           <br>Es una micro-región con una sólida base histórica y una profunda proyección en el futuro (eso, sin contar el tremendo desarrollo del presente…)      
@@ -69,7 +69,6 @@
     </div>
     <div class="imagenes" >
       <fieldset>
-        <legend>Restaurante ...</legend>
       <div class="row-img-1">
         <img src="https://www.restaurantejauja.com.ar/images/resto3.jpg" alt="">
         <img src="https://www.restaurantejauja.com.ar/images/resto4.jpg" alt="">
@@ -112,6 +111,7 @@
               - Lomito con papas y huevo frito<br>
               - Pastas con salsa a elección<br>
               (incluye bebida y postre)<br>
+              <p class="etc">ver mas...</p>
             </p>
           </div>
           <div class="column-p">
@@ -128,6 +128,7 @@
               - Vinagreta de aceto y miel<br>
               - Frutas asadas de estación<br>
               - Ricota del vecino<br>
+              <p class="etc">ver mas...</p>
             </p>
           </div>
         </div>
@@ -148,6 +149,7 @@
               - Ojo de bife<br>
               - Cordero<br>
               - Buñuelo de mandioca<br>
+              <p class="etc">ver mas...</p>
             </p>
           </div>
           <div class="column-p">
@@ -164,6 +166,7 @@
               - Vinagreta de aceto y miel<br>
               - Frutas asadas de estación<br>
               - Ricota del vecino<br>
+              <p class="etc">ver mas...</p>
             </p>
           </div>
         </div>  
@@ -179,6 +182,7 @@
               - Gaseosas<br>
               - Cerveza Imperial Rubia<br>
               - Cerveza Stella Artois<br>
+              <p class="etc">ver mas...</p>
             </p>
           </div>
           <div class="column-p">
@@ -195,6 +199,7 @@
               - Tres Ilustres Petit Verdot 2018<br>
               - Tres Ilustres Red Blend 2018<br>
               - Ricota del vecino<br>
+              <p class="etc">ver mas...</p>
             </p>
           </div>
           
@@ -239,9 +244,9 @@
         <form>
           <fieldset>
 
-            <legend style="font-size: 30px;">
+            <!-- <legend style="font-size: 30px;">
               Consultas y reservas
-            </legend>
+            </legend> -->
 
             <select>
               <option value="1">Realizar reserva</option>
@@ -255,7 +260,7 @@
             <input id="comensales" type="text" name="cantidad" placeholder="Comensales..." >
             <input id="fecha" type="datetime-local" name="fecha" placeholder="Fecha..." >
             <textarea placeholder="Mensaje..." cols="85" rows="10" maxlength="400"></textarea>
-            <input id="envio_form" type="submit" placeholder="Enviar" style="width: 100px; margin: 20px auto 0 auto;">
+            <input class="btn-enviar" id="envio_form" type="submit" placeholder="Enviar">
             <p class="warnings" id="warnings"></p>
 
           </fieldset>
@@ -298,7 +303,7 @@
 
   </footer>
 
-  <div style="background-color: black;color: white; text-align: center;">
+  <div style="background-color: black;color: white; text-align: center; padding: 5px 0;">
     <p>© 2022 Casa De Campo | Todos los derechos reservados | Sitio realizado por Codo a Codo</p>
   </div>
 

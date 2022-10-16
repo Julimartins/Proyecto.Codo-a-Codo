@@ -19,8 +19,8 @@ body{
 }
 
 img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 2px;
 }
 
@@ -37,8 +37,8 @@ header .encabezado{
     font-size: 30px;
     padding: 10px 0;
     position: fixed;
-    z-index: 1;
     transition: all 1s ease;
+    z-index: 1;
 }
 
 .header-1{
@@ -118,7 +118,7 @@ section div h1{
     display: inline-block;
     border-top: 10px solid rgb(203, 147, 57);
     border-radius: 10px;
-    padding: 0 100px;
+    padding: 20px 100px;
     width: 95%;
 }
 
@@ -147,6 +147,7 @@ section .texto{
 section .historia h1{
     margin-bottom: 20px;
     text-decoration: underline;
+    font-family: 'Playball', cursive;
 }
 
 section h2{
@@ -196,18 +197,19 @@ section .menu{
     font-size: 20px;
     text-align: center;
     font-weight: 700;
-    padding: 20px 0px;
+    padding: 25px 0px;
+    font-family: 'Playball', cursive;
 }
 
 .column-p{
     padding: 30px 30px 30px 30px;
-    cursor: pointer;
 }
 
 .column-p img{
-    height: 400px;
+    height: 300px;
     width: 400px;
     transition: all 1s ease;
+    cursor: pointer;
 }
 
 .comidas{
@@ -218,6 +220,14 @@ section .menu{
 .column-p img:hover{
     scale: 1.2;
     transition: all 1s ease;
+}
+
+section .etc{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Playball', cursive;
+    cursor: pointer;
 }
 
 
@@ -262,36 +272,51 @@ section form{
 
 fieldset{
     padding: 20px;
-    border: 3px solid rgb(16, 27, 15) ;
+    border: 6px solid rgb(224, 202, 174) ;
+    color: rgb(221, 160, 119);
 }
 
-input{
+section input{
     display: block;
     height: 30px;
     width: 600px;
-    background-color: #ccc;
+    background-color: rgb(243, 226, 170);
     padding: 0 20px;
     margin: 20px 0;
     outline: none;
-    border: 1px rgb(158, 152, 152) solid;
+    border: none;
+    color: gray;
 }
 
 select{
     height: 30px;
     width: 300px;
-    background-color: #ccc;
+    background-color: rgb(243, 226, 170);
     outline: none;
     padding: 0 15px;
+    border: none;
+    color: gray;
 }
 
 textarea{
-    background-color: #ccc; 
+    background-color: rgb(243, 226, 170); 
     padding: 10px 20px; 
     width: 600px;
     height: 200px;
     resize: none; 
     outline: none;
     border: 1px rgb(158, 152, 152) solid;
+    border: none;
+}
+
+section .btn-enviar{
+    width: 100px; 
+    cursor: pointer; 
+    margin: 20px auto 0 auto;
+}
+
+section .btn-enviar:hover{
+    background-color: rgb(235, 195, 51);
 }
 
 .warnings{
@@ -338,7 +363,7 @@ footer{
     width: 100%;
     height: 40px;
     align-items: center; 
-    padding: 60px;
+    padding: 100px 60px;
     justify-content:space-evenly;
 }
 
