@@ -425,7 +425,6 @@ footer .lista-redes li:hover{
         height: 0;
         overflow: hidden;
         transition: all 2s ease;
-        margin-top: 15px;
         position: absolute;
         background-color: rgb(31, 30, 30);
     }
@@ -444,14 +443,13 @@ footer .lista-redes li:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 30px;
+        padding-top: 40px;
     }
     
     header li{
         margin: 15px 0 ;
         padding-left: 10px;
-        border-left: 10px solid white;
-        border-right: 10px solid white;
+        border: none;
     }
 
     section .texto{
@@ -462,12 +460,6 @@ footer .lista-redes li:hover{
         margin-bottom: 230px;
         padding-left: 240px;
         margin-bottom: 300px;
-    }
-
-    section .container-form{
-        background-color: rgb(155, 147, 147);
-        width: 100%;
-        padding-left: 150px;
     }
 
     .row{
