@@ -115,20 +115,16 @@ section{
 
 section div h1{
     background-color: black;
-    display: inline-block;
     border-top: 10px solid rgb(203, 147, 57);
     border-radius: 10px;
-    padding: 20px 100px;
-    width: 95%;
+    padding: 20px 0px;
 }
 
 section .titulo-seccion{
     color: white;
     font-size: 20px;
-    justify-content: center;
     text-align: center;
-    width: 100%;
-    padding: 10px 0;
+    margin-left: -20px;
 }
 
 section .historia{
@@ -160,16 +156,17 @@ section h2{
 /* SECCION IMAGENES */
 
 section .imagenes{
-    padding: 200px 100px;
+    padding: 200px 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 section .imagenes img{
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
     transition: all 1s ease;
+
 }
 
 section .imagenes img:hover{
@@ -256,8 +253,7 @@ section .info-mapa li{
 
 section .section-consultas{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
     padding: 200px 0;
 }
 
@@ -266,7 +262,6 @@ section .tittle-form{
 }
 
 section form{
-    width: 700px;
     margin: 30px 0;
 }
 
@@ -382,6 +377,7 @@ footer{
 
 .nav-footer ul a{
     color: white;
+    padding: 20px 0;
 }
 
 .nav-footer ul li:hover{
@@ -434,6 +430,10 @@ footer .lista-redes li:hover{
         justify-content: space-between;
     }
 
+    .header-1 img{
+        margin: 0 20px;
+    }
+
     header .restaurante{
         height: 400px;
     }
@@ -455,7 +455,7 @@ footer .lista-redes li:hover{
     }
 
     .active{
-        height: 50vh;
+        height: 32vh;
         transition: all 3s ease;
     }
 
@@ -477,18 +477,62 @@ footer .lista-redes li:hover{
         border: none;
     }
 
+    section .historia{
+        padding: 0px;
+    }
+
     section .texto{
         font-size: 15px;
+        padding: 10px;
+        border: none;
     }
 
-    .mapa{
-        margin-bottom: 230px;
-        padding-left: 240px;
-        margin-bottom: 300px;
+    .imagenes fieldset{
+        padding: 0;
     }
 
-    .row{
-        padding-bottom: 0px;
+    .imagenes fieldset img{
+        width: 250px;
+        height: 250px;
+    }
+
+    section .mapa{
+        flex-direction: column-reverse;
+    }
+
+    section .section-consultas{
+        display: block;
+        margin: auto;
+        align-items: center;
+        width: 320px;
+    }
+
+    section .container-form input{
+        width: 300px;
+    }
+
+    section .container-form textarea{
+        width: 300px;
+    }
+
+    section form{
+        margin: 0;
+        padding: 0;
+        width: 100px;
+    }
+
+    footer{
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .lista-redes{
+        display: flex;
+        padding: 20px 0;
+    }
+
+    .lista-redes li a{
+        padding: 0 10px;
     }
 }
 
