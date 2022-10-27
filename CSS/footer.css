@@ -1,0 +1,78 @@
+/* FOOTER */
+
+footer{
+    background-color: rgb(31, 30, 30);
+    color: bisque;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center; 
+    padding: 100px 60px;
+    justify-content:space-evenly;
+}
+
+.nav-footer ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+}
+
+.nav-footer ul li{
+    padding: 2px 0;
+    transition: all 1s ease;
+}
+
+.nav-footer ul a{
+    color: white;
+    padding: 20px 0;
+}
+
+.nav-footer ul li:hover{
+    transition: all 1s ease;
+    scale: 1.3;
+}
+
+footer .redes{
+    display: flex;
+    justify-content: center;  
+}
+
+footer .lista-redes{
+    margin-right: 20px;
+}
+
+footer .lista-redes li{
+    padding: 10px 0px;
+    transition: all 1s ease;
+    padding: 2px 0;
+}
+
+footer a{
+    color: bisque;
+}
+
+footer .lista-redes li:hover{
+    transition: all 0.5s ease;
+    scale: 1.9;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    footer{
+        flex-direction: column;
+        height: 300px;
+        background-color: black;
+    }
+
+    .lista-redes{
+        display: flex;
+        padding: 20px 0;
+    }
+
+    .lista-redes li a{
+        padding: 0 10px;
+    }
+}

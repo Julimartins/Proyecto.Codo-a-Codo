@@ -73,13 +73,66 @@ window.sr = ScrollReveal();
     });
 
     sr.reveal('.row1', {
-        duration: 3000,
+        duration: 2000,
         origin: 'right',
         distance: '-1000px'
     });
 
     sr.reveal('.row2', {
-        duration: 3000,
+        duration: 2000,
         origin: 'left',
         distance: '-1000px'
     });
+
+
+const boton1 = document.querySelector('.boton1');
+const boton2 = document.querySelector('.boton2');
+const boton3 = document.querySelector('.boton3');
+const boton4 = document.querySelector('.boton4');
+const boton5 = document.querySelector('.boton5');
+const boton6 = document.querySelector('.boton6');
+const boton7 = document.querySelector('.boton7');
+const boton8 = document.querySelector('.boton8');
+const boton9 = document.querySelector('.boton9');
+const boton10 = document.querySelector('.boton10');
+const carrusel = document.querySelector('.carrusel');
+    
+boton1.addEventListener('click', ()=>{
+    carrusel.style.transform =  `translateX(0%) `
+})
+    
+boton2.addEventListener('click', ()=>{
+    carrusel.style.transform =  `translateX(-10%) `
+})
+    
+boton3.addEventListener('click', ()=>{
+    carrusel.style.transform =  `translateX(-20%) `
+})
+    
+boton4.addEventListener('click', ()=>{
+    carrusel.style.transform =  `translateX(-30%) `
+})
+
+boton5.addEventListener('click', ()=>{
+    carrusel.style.transform =  `translateX(-40%) `
+})
+
+boton6.addEventListener('click', ()=>{
+    carrusel.style.transform =  `translateX(-50%) `
+})
+
+boton7.addEventListener('click', ()=>{
+    carrusel.style.transform =  `translateX(-60%) `
+})
+
+boton8.addEventListener('click', ()=>{
+    carrusel.style.transform =  `translateX(-70%) `
+})
+
+boton9.addEventListener('click', ()=>{
+    carrusel.style.transform =  `translateX(-80%) `
+})
+
+boton10.addEventListener('click', ()=>{
+    carrusel.style.transform =  `translateX(-90%) `
+})
