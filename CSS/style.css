@@ -16,6 +16,7 @@ html{
 body{
     width: 100%!important;
     overflow-x: hidden!important;
+    background-color: rgb(241, 235, 223);
 }
 
 img{
