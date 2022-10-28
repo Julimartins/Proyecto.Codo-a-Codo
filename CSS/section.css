@@ -69,7 +69,7 @@ section .imagenes .botones{
     width: 1000px;
     background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     
 }
 
@@ -79,8 +79,7 @@ section .imagenes .botones{
     height: 20px;
     width: 20px;
     border: 1px solid black;
-    margin: 10px;
-    margin: auto 20px;
+    margin: auto 0px;
     cursor: pointer;
 }
 
@@ -312,7 +311,7 @@ section .btn-enviar:hover{
 }
 
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 425px){
 
     section .texto{
         font-size: 10px;
@@ -323,21 +322,21 @@ section .btn-enviar:hover{
 
     section .imagenes{
         margin: 150px auto;
-        width: 300px;
+        width: 340px;
     }
     
     section .imagenes img{
         height: 200px;
-        width: 300px;
+        width: 340px;
     }
     
     section .imagenes .botones{
         height: 40px;
-        width: 300px;
+        width: 340px;
     }
     
     .boton1, .boton2, .boton3, .boton4, .boton5, .boton6, .boton7, .boton8, .boton9, .boton10{
-        height: 10px;
-        width: 10px;
+        height: 5px;
+        width: 5px;
     }
 }
