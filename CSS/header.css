@@ -126,7 +126,7 @@ header .abajo:hover{
     }
 
     .active{
-        height: 50%;
+        height: 100%;
         transition: all 3s ease;
     }
 

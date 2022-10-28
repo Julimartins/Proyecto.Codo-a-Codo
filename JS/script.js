@@ -55,31 +55,31 @@ window.addEventListener('scroll', function(){
 window.sr = ScrollReveal();
 
     sr.reveal('.navbar', {
-        duration: 3000,
+        duration: 1000,
         origin: 'bottom',
         distance: '-100px'
     });
 
     sr.reveal('.navbar1', {
-        duration: 3000,
+        duration: 1000,
         origin: 'left',
         distance: '-1000px'
     });
 
     sr.reveal('.navbar2', {
-        duration: 3000,
+        duration: 1000,
         origin: 'right',
         distance: '-1000px'
     });
 
     sr.reveal('.row1', {
-        duration: 2000,
+        duration: 1000,
         origin: 'right',
         distance: '-1000px'
     });
 
     sr.reveal('.row2', {
-        duration: 2000,
+        duration: 1000,
         origin: 'left',
         distance: '-1000px'
     });
