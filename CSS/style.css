@@ -19,6 +19,11 @@ body{
     background-color: rgb(241, 235, 223);
 }
 
+.titu {
+    margin: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 img{
     width: 200px;
     height: 200px;
